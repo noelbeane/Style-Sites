@@ -3,3 +3,20 @@
 //
 // All of your mixins should go in this file.
 ////////////////////////
+
+
+
+
+
+@mixin rounded-top-left {
+  $vert: top;
+  $horz: left;
+  $radius: 10px;
+
+  border-#{$vert}-#{$horz}-radius: $radius;
+  -moz-border-radius-#{$vert}#{$horz}: $radius;
+  -webkit-border-#{$vert}-#{$horz}-radius: $radius;
+}
+
+#navbar li { @include rounded-top-left; }
+#footer { @include rounded-top-left; }

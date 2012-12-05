@@ -10,7 +10,7 @@
 // Loop over all Header elements and make them progressively lighter based on the colours in our $black colour.
 @for $i from 1 through 6 {
   h#{$i} {
-    color: nth($black, $i);
+    color: nth($black, 1);
   }
 }
 
@@ -27,11 +27,12 @@
 
   @include sassy-button-structure(.25em, 1.25em);
 
-  @include sassy-button-gradient("matte", nth($blue, 3), $text-color: nth($black, 1), $text-style: "inset");
-  @include sassy-button-style("push", nth($blue, 3));
+  @include sassy-button-gradient("matte", nth($slate, 1), $text-color: nth($black, 1), $text-style: "inset");
+  @include sassy-button-style("push", nth($slate, 3));
 
   &.red {
-    @include sassy-button-gradient("matte", nth($red, 3), $text-color: nth($black, 1), $text-style: "inset");
+    @include sassy-button-gradient("matte", nth($blue-drk, 3), $text-color: nth($black, 1), $text-style: "inset");
     @include sassy-button-style("push", nth($red, 3));
   }
 }
+

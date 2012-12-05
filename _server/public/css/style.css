@@ -504,28 +504,40 @@ img, video {
   clear: both;
 }
 
+#navbar li {
+  border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+}
+
+#footer {
+  border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+}
+
 h1 {
   color: #282828;
 }
 
 h2 {
-  color: #5d5d5d;
+  color: #282828;
 }
 
 h3 {
-  color: #939393;
+  color: #282828;
 }
 
 h4 {
-  color: #c9c9c9;
+  color: #282828;
 }
 
 h5 {
-  color: #dedede;
+  color: #282828;
 }
 
 h6 {
-  color: #e9e9e9;
+  color: #282828;
 }
 
 .call-to-action {
@@ -595,42 +607,42 @@ h6 {
   -o-border-radius: 0.25em;
   border-radius: 0.25em;
   *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF7F7FFF', endColorstr='#FF1919FF');
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ccccff), color-stop(70%, #7f7fff));
-  background: -webkit-linear-gradient(#ccccff, #7f7fff 70%);
-  background: -moz-linear-gradient(#ccccff, #7f7fff 70%);
-  background: -o-linear-gradient(#ccccff, #7f7fff 70%);
-  background: linear-gradient(#ccccff, #7f7fff 70%);
-  -webkit-box-shadow: white 0 1px 0 inset;
-  -moz-box-shadow: white 0 1px 0 inset;
-  box-shadow: white 0 1px 0 inset;
-  border: 1px solid #6666ff;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF7D979F', endColorstr='#FF4D6269');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a9babf), color-stop(70%, #7d979f));
+  background: -webkit-linear-gradient(#a9babf, #7d979f 70%);
+  background: -moz-linear-gradient(#a9babf, #7d979f 70%);
+  background: -o-linear-gradient(#a9babf, #7d979f 70%);
+  background: linear-gradient(#a9babf, #7d979f 70%);
+  -webkit-box-shadow: #d5dde0 0 1px 0 inset;
+  -moz-box-shadow: #d5dde0 0 1px 0 inset;
+  box-shadow: #d5dde0 0 1px 0 inset;
+  border: 1px solid #6e8b94;
   color: #282828;
-  text-shadow: #d9d9ff 0 1px 0;
-  -webkit-box-shadow: #4242ff 0 0.4em 0px, #dbdbff 0 1px 0 inset;
-  -moz-box-shadow: #4242ff 0 0.4em 0px, #dbdbff 0 1px 0 inset;
-  box-shadow: #4242ff 0 0.4em 0px, #dbdbff 0 1px 0 inset;
-  border-bottom: solid 1px #7f7fff;
+  text-shadow: #b1c0c5 0 1px 0;
+  -webkit-box-shadow: #9bafb5 0 0.4em 0px, #f3f5f6 0 1px 0 inset;
+  -moz-box-shadow: #9bafb5 0 0.4em 0px, #f3f5f6 0 1px 0 inset;
+  box-shadow: #9bafb5 0 0.4em 0px, #f3f5f6 0 1px 0 inset;
+  border-bottom: solid 1px #becbcf;
 }
 .big-button:hover {
   text-decoration: none;
 }
 .big-button:hover {
-  background-color: #6666ff;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #b2b2ff), color-stop(75%, #6666ff));
-  background: -webkit-linear-gradient(#b2b2ff 3%, #6666ff 75%);
-  background: -moz-linear-gradient(#b2b2ff 3%, #6666ff 75%);
-  background: -o-linear-gradient(#b2b2ff 3%, #6666ff 75%);
-  background: linear-gradient(#b2b2ff 3%, #6666ff 75%);
+  background-color: #6e8b94;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #9aaeb5), color-stop(75%, #6e8b94));
+  background: -webkit-linear-gradient(#9aaeb5 3%, #6e8b94 75%);
+  background: -moz-linear-gradient(#9aaeb5 3%, #6e8b94 75%);
+  background: -o-linear-gradient(#9aaeb5 3%, #6e8b94 75%);
+  background: linear-gradient(#9aaeb5 3%, #6e8b94 75%);
 }
 .big-button:active {
-  -webkit-box-shadow: #5656ff 0 1px 2px inset;
-  -moz-box-shadow: #5656ff 0 1px 2px inset;
-  box-shadow: #5656ff 0 1px 2px inset;
+  -webkit-box-shadow: #67838c 0 1px 2px inset;
+  -moz-box-shadow: #67838c 0 1px 2px inset;
+  box-shadow: #67838c 0 1px 2px inset;
 }
 .big-button.disabled, .big-button[disabled] {
   opacity: 0.6;
-  background: #7f7fff;
+  background: #7d979f;
   cursor: default;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -638,24 +650,24 @@ h6 {
 }
 .big-button:active {
   top: 0.3em;
-  -webkit-box-shadow: #5656ff 0 0.2em 0px;
-  -moz-box-shadow: #5656ff 0 0.2em 0px;
-  box-shadow: #5656ff 0 0.2em 0px;
+  -webkit-box-shadow: #a7b8be 0 0.2em 0px;
+  -moz-box-shadow: #a7b8be 0 0.2em 0px;
+  box-shadow: #a7b8be 0 0.2em 0px;
 }
 .big-button.red {
   *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFF7F7F', endColorstr='#FFFF1919');
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffcccc), color-stop(70%, #ff7f7f));
-  background: -webkit-linear-gradient(#ffcccc, #ff7f7f 70%);
-  background: -moz-linear-gradient(#ffcccc, #ff7f7f 70%);
-  background: -o-linear-gradient(#ffcccc, #ff7f7f 70%);
-  background: linear-gradient(#ffcccc, #ff7f7f 70%);
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF8BCCE4', endColorstr='#FF38A8D1');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c9e7f2), color-stop(70%, #8bcce4));
+  background: -webkit-linear-gradient(#c9e7f2, #8bcce4 70%);
+  background: -moz-linear-gradient(#c9e7f2, #8bcce4 70%);
+  background: -o-linear-gradient(#c9e7f2, #8bcce4 70%);
+  background: linear-gradient(#c9e7f2, #8bcce4 70%);
   -webkit-box-shadow: white 0 1px 0 inset;
   -moz-box-shadow: white 0 1px 0 inset;
   box-shadow: white 0 1px 0 inset;
-  border: 1px solid #ff6666;
+  border: 1px solid #76c3df;
   color: #282828;
-  text-shadow: #ffd9d9 0 1px 0;
+  text-shadow: #d4ecf5 0 1px 0;
   -webkit-box-shadow: #ff4242 0 0.4em 0px, #ffdbdb 0 1px 0 inset;
   -moz-box-shadow: #ff4242 0 0.4em 0px, #ffdbdb 0 1px 0 inset;
   box-shadow: #ff4242 0 0.4em 0px, #ffdbdb 0 1px 0 inset;
@@ -665,21 +677,21 @@ h6 {
   text-decoration: none;
 }
 .big-button.red:hover {
-  background-color: #ff6666;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #ffb2b2), color-stop(75%, #ff6666));
-  background: -webkit-linear-gradient(#ffb2b2 3%, #ff6666 75%);
-  background: -moz-linear-gradient(#ffb2b2 3%, #ff6666 75%);
-  background: -o-linear-gradient(#ffb2b2 3%, #ff6666 75%);
-  background: linear-gradient(#ffb2b2 3%, #ff6666 75%);
+  background-color: #76c3df;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #b4deee), color-stop(75%, #76c3df));
+  background: -webkit-linear-gradient(#b4deee 3%, #76c3df 75%);
+  background: -moz-linear-gradient(#b4deee 3%, #76c3df 75%);
+  background: -o-linear-gradient(#b4deee 3%, #76c3df 75%);
+  background: linear-gradient(#b4deee 3%, #76c3df 75%);
 }
 .big-button.red:active {
-  -webkit-box-shadow: #ff5656 0 1px 2px inset;
-  -moz-box-shadow: #ff5656 0 1px 2px inset;
-  box-shadow: #ff5656 0 1px 2px inset;
+  -webkit-box-shadow: #6abddc 0 1px 2px inset;
+  -moz-box-shadow: #6abddc 0 1px 2px inset;
+  box-shadow: #6abddc 0 1px 2px inset;
 }
 .big-button.red.disabled, .big-button.red[disabled] {
   opacity: 0.6;
-  background: #ff7f7f;
+  background: #8bcce4;
   cursor: default;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -1157,28 +1169,16 @@ h6 {
   padding-right: 0;
 }
 
-#navContainer {
-  display: inline-block;
-  height: 4em;
-  background-color: #FFFF00;
-  position: absolute;
-  top: 1em;
-  width: 100%;
-}
-
-#navLink {
-  display: inline-block;
-  font-family: "league-gothic";
-  font-size: 1.75em;
+nav ul {
+  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+  font-style: bold;
+  font-size: 1.5em;
   color: #FFFFFF;
   text-decoration: none;
-  margin-top: 1.35em;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  padding-top: 2.5em;
+  padding-left: 10px;
+  padding-right: 10px;
   cursor: pointer;
-}
-
-#headerContainer {
   display: inline-block;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #585858), color-stop(50%, #343434), color-stop(100%, #1f1f1f));
   background: -webkit-linear-gradient(#585858, #343434 50%, #1f1f1f);
@@ -1187,247 +1187,102 @@ h6 {
   background: linear-gradient(#585858, #343434 50%, #1f1f1f);
   border: 0px;
   height: 5em;
-  width: 100%;
 }
 
-#searchContainer {
-  display: inline-block;
-  height: 4em;
-  width: 240px;
-  position: absolute;
-  top: 0.5em;
-}
-
-#logoContainer {
-  display: inline-block;
-  background-image: url("http://www.beane.biz/stage/lab/typekit/dbtv_logo.svg");
-  background-repeat: no-repeat;
-  float: left;
-  height: 4em;
-  width: 180px;
-  margin: 0.5em 1em 0em 1em;
-}
-
-#searchInput {
-  padding: 5px;
-  font-size: 0.7em;
-  font-style: bold;
-  color: #CCC;
-  text-shadow: 0px 1px 0px #000;
-  outline: none;
-  background: -webkit-gradient(linear, left top, left bottom, from(black), to(black));
-  background: -moz-linear-gradient(top, black, black);
-  border: 1px solid #000000;
-  -webkit-box-shadow: 1px 1px 0px #efefef;
-  -moz-box-shadow: 1px 1px 0px #efefef;
-  box-shadow: 1px 1px 0px #efefef;
-}
-
-#p01 {
-  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
-  font-style: bold;
-  font-size: 0.7em;
-  color: #CCC;
-  text-decoration: none;
-}
-
-#link01 {
+a {
   font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
   font-style: bold;
   font-size: 1em;
-  color: #3ECDFC;
-  text-decoration: none;
-}
-
-#DLCallout {
-  display: inline-block;
-  height: 1.5em;
-  background-color: #000;
-  position: relative;
-  padding-right: 0.5em;
-  padding-left: 0.5em;
-  padding-top: 0.25em;
-  margin-top: 0.75em;
-  opacity: 0.6;
-}
-
-#DLCalloutH1 {
-  font-size: 0.75em;
-  font-family: helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
-  font-style: bold;
-  color: #3ECDFC;
-}
-
-#desc {
-  display: inline-block;
-  font-style: bold;
-  background-color: #000;
-  position: relative;
-  padding-right: 0.75em;
-  padding-left: 0.75em;
-  padding-top: 0.75em;
-  margin-top: 0.75em;
-  width: 350px;
-  height: 3em;
-}
-
-#DLDescBkg {
-  display: inline-block;
-  font-style: bold;
-  background-color: #000;
-  position: relative;
-  padding-right: 0.75em;
-  padding-left: 0.75em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  margin-top: 0.75em;
-  width: 550px;
-  opacity: 0.6;
-}
-
-#DLDescH1 {
-  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
-  font-style: bold;
-  font-size: 1em;
-  color: #999999;
-  text-decoration: none;
-}
-
-#DLDescH2 {
-  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
-  font-style: bold;
-  font-size: 1em;
-  color: #3ECDFC;
-  text-decoration: none;
-}
-
-#DLDescP {
-  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
-  font-style: bold;
-  font-size: 0.75em;
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-#featuredH1 {
-  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
-  font-style: bold;
-  font-size: 1.5em;
-  color: #444444;
-  text-decoration: none;
-}
-
-#featuredLink {
-  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
-  font-style: bold;
-  font-size: 0.7em;
   color: #0099cc;
   text-decoration: none;
 }
 
-#featuredItem {
-  display: inline-block;
-  position: relative;
-  width: 300px;
-  height: 210px;
-  margin-right: 20px;
-  background-image: url("http://www.beane.biz/stage/lab/typekit/thumbnail.jpg");
-  background-repeat: no-repeat;
-  float: left;
-}
-
-#featuredItemShowName {
-  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
-  font-style: bold;
-  font-size: 0.7em;
-  color: #0099cc;
-  text-decoration: none;
-  position: absolute;
-  top: 180px;
-}
-
-#featuredItemShowName {
-  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
-  font-style: bold;
-  font-size: 0.7em;
-  color: #0099cc;
-  text-decoration: none;
-  position: absolute;
-  top: 180px;
-}
-
-#featuredItemDuration {
-  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
-  font-style: bold;
-  font-size: 0.7em;
-  color: #666666;
-  text-decoration: none;
-}
-
-#featuredItemEpisode {
-  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
-  font-style: bold;
-  font-size: 24px;
-  color: #0099cc;
-  text-decoration: none;
-}
-
-#showBlogBody {
+p {
   font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
   font-style: bold;
   font-size: 0.4 em;
   line-height: 2 em;
-  color: #333333;
+  color: #444444;
   text-decoration: none;
 }
 
-#copyContainer {
-  display: inline-block;
-  width: 100%;
-  margin-top: 20px;
-}
-
-#showblogQuote {
+h1 {
   font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 4 em;
-  line-height: 8 em;
-  color: #333333;
+  font-style: bold;
+  font-size: 1.8em;
+  color: #444444;
   text-decoration: none;
 }
 
-#showblogRecomm {
+h2 {
+  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+  font-style: bold;
+  font-size: 1.4em;
+  color: #444444;
+  text-decoration: none;
+}
+
+h3 {
+  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+  font-style: bold;
+  font-size: 1.2em;
+  color: #0099cc;
+  text-decoration: none;
+}
+
+h4 {
+  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+  font-style: normal;
+  font-size: 0.8em;
+  color: #0099cc;
+  text-decoration: none;
+}
+
+h5 {
   font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
   font-weight: bold;
-  font-size: 4 em;
-  line-height: 8 em;
+  font-size: 1.8em;
   color: #666666;
   text-decoration: none;
 }
 
-#subnavLink {
-  display: inline-block;
+h6 {
   font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+  font-style: italic;
   font-weight: bold;
-  font-size: 0.8em;
-  color: #FFFFFF;
+  font-size: 1.8em;
+  color: #222222;
   text-decoration: none;
-  cursor: pointer;
-  margin-top: 0.7em;
 }
 
-#subnavContainer {
-  /*padding: 0.5em 0.5em;
-  cursor: pointer;*/
-  display: inline-block;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bababa), color-stop(50%, #7e7e7e), color-stop(100%, #5c5c5c));
-  background: -webkit-linear-gradient(#bababa, #7e7e7e 50%, #5c5c5c);
-  background: -moz-linear-gradient(#bababa, #7e7e7e 50%, #5c5c5c);
-  background: -o-linear-gradient(#bababa, #7e7e7e 50%, #5c5c5c);
-  background: linear-gradient(#bababa, #7e7e7e 50%, #5c5c5c);
-  border: 0px;
-  height: 2em;
-  width: 100%;
-  margin-top: 2em;
+h7 {
+  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+  font-style: bold;
+  font-size: 1.8em;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+h8 {
+  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+  font-style: bold;
+  font-size: 1em;
+  color: #CCCCCC;
+  text-decoration: none;
+}
+
+h9 {
+  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+  font-style: bold;
+  font-size: 0.6em;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+h10 {
+  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+  font-style: bold;
+  font-size: 1.8em;
+  color: #0099cc;
+  text-decoration: none;
 }

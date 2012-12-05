@@ -1156,3 +1156,278 @@ h6 {
 .buttons ul li.last {
   padding-right: 0;
 }
+
+#navContainer {
+  display: inline-block;
+  height: 4em;
+  background-color: #FFFF00;
+  position: absolute;
+  top: 1em;
+  width: 100%;
+}
+
+#navLink {
+  display: inline-block;
+  font-family: "league-gothic";
+  font-size: 1.75em;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-top: 1.35em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+
+#headerContainer {
+  display: inline-block;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #585858), color-stop(50%, #343434), color-stop(100%, #1f1f1f));
+  background: -webkit-linear-gradient(#585858, #343434 50%, #1f1f1f);
+  background: -moz-linear-gradient(#585858, #343434 50%, #1f1f1f);
+  background: -o-linear-gradient(#585858, #343434 50%, #1f1f1f);
+  background: linear-gradient(#585858, #343434 50%, #1f1f1f);
+  border: 0px;
+  height: 5em;
+  width: 100%;
+}
+
+#searchContainer {
+  display: inline-block;
+  height: 4em;
+  width: 240px;
+  position: absolute;
+  top: 0.5em;
+}
+
+#logoContainer {
+  display: inline-block;
+  background-image: url("http://www.beane.biz/stage/lab/typekit/dbtv_logo.svg");
+  background-repeat: no-repeat;
+  float: left;
+  height: 4em;
+  width: 180px;
+  margin: 0.5em 1em 0em 1em;
+}
+
+#searchInput {
+  padding: 5px;
+  font-size: 0.7em;
+  font-style: bold;
+  color: #CCC;
+  text-shadow: 0px 1px 0px #000;
+  outline: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(black));
+  background: -moz-linear-gradient(top, black, black);
+  border: 1px solid #000000;
+  -webkit-box-shadow: 1px 1px 0px #efefef;
+  -moz-box-shadow: 1px 1px 0px #efefef;
+  box-shadow: 1px 1px 0px #efefef;
+}
+
+#p01 {
+  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+  font-style: bold;
+  font-size: 0.7em;
+  color: #CCC;
+  text-decoration: none;
+}
+
+#link01 {
+  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+  font-style: bold;
+  font-size: 1em;
+  color: #3ECDFC;
+  text-decoration: none;
+}
+
+#DLCallout {
+  display: inline-block;
+  height: 1.5em;
+  background-color: #000;
+  position: relative;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  padding-top: 0.25em;
+  margin-top: 0.75em;
+  opacity: 0.6;
+}
+
+#DLCalloutH1 {
+  font-size: 0.75em;
+  font-family: helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+  font-style: bold;
+  color: #3ECDFC;
+}
+
+#desc {
+  display: inline-block;
+  font-style: bold;
+  background-color: #000;
+  position: relative;
+  padding-right: 0.75em;
+  padding-left: 0.75em;
+  padding-top: 0.75em;
+  margin-top: 0.75em;
+  width: 350px;
+  height: 3em;
+}
+
+#DLDescBkg {
+  display: inline-block;
+  font-style: bold;
+  background-color: #000;
+  position: relative;
+  padding-right: 0.75em;
+  padding-left: 0.75em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-top: 0.75em;
+  width: 550px;
+  opacity: 0.6;
+}
+
+#DLDescH1 {
+  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+  font-style: bold;
+  font-size: 1em;
+  color: #999999;
+  text-decoration: none;
+}
+
+#DLDescH2 {
+  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+  font-style: bold;
+  font-size: 1em;
+  color: #3ECDFC;
+  text-decoration: none;
+}
+
+#DLDescP {
+  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+  font-style: bold;
+  font-size: 0.75em;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#featuredH1 {
+  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+  font-style: bold;
+  font-size: 1.5em;
+  color: #444444;
+  text-decoration: none;
+}
+
+#featuredLink {
+  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+  font-style: bold;
+  font-size: 0.7em;
+  color: #0099cc;
+  text-decoration: none;
+}
+
+#featuredItem {
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  height: 210px;
+  margin-right: 20px;
+  background-image: url("http://www.beane.biz/stage/lab/typekit/thumbnail.jpg");
+  background-repeat: no-repeat;
+  float: left;
+}
+
+#featuredItemShowName {
+  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+  font-style: bold;
+  font-size: 0.7em;
+  color: #0099cc;
+  text-decoration: none;
+  position: absolute;
+  top: 180px;
+}
+
+#featuredItemShowName {
+  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+  font-style: bold;
+  font-size: 0.7em;
+  color: #0099cc;
+  text-decoration: none;
+  position: absolute;
+  top: 180px;
+}
+
+#featuredItemDuration {
+  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+  font-style: bold;
+  font-size: 0.7em;
+  color: #666666;
+  text-decoration: none;
+}
+
+#featuredItemEpisode {
+  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+  font-style: bold;
+  font-size: 24px;
+  color: #0099cc;
+  text-decoration: none;
+}
+
+#showBlogBody {
+  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+  font-style: bold;
+  font-size: 0.4 em;
+  line-height: 2 em;
+  color: #333333;
+  text-decoration: none;
+}
+
+#copyContainer {
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#showblogQuote {
+  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 4 em;
+  line-height: 8 em;
+  color: #333333;
+  text-decoration: none;
+}
+
+#showblogRecomm {
+  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+  font-weight: bold;
+  font-size: 4 em;
+  line-height: 8 em;
+  color: #666666;
+  text-decoration: none;
+}
+
+#subnavLink {
+  display: inline-block;
+  font-family: arial, helvetica, hirakakupro-w3, osaka, "ms pgothic", sans-serif;
+  font-weight: bold;
+  font-size: 0.8em;
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 0.7em;
+}
+
+#subnavContainer {
+  /*padding: 0.5em 0.5em;
+  cursor: pointer;*/
+  display: inline-block;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bababa), color-stop(50%, #7e7e7e), color-stop(100%, #5c5c5c));
+  background: -webkit-linear-gradient(#bababa, #7e7e7e 50%, #5c5c5c);
+  background: -moz-linear-gradient(#bababa, #7e7e7e 50%, #5c5c5c);
+  background: -o-linear-gradient(#bababa, #7e7e7e 50%, #5c5c5c);
+  background: linear-gradient(#bababa, #7e7e7e 50%, #5c5c5c);
+  border: 0px;
+  height: 2em;
+  width: 100%;
+  margin-top: 2em;
+}

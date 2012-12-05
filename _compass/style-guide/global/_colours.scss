@@ -1,8 +1,11 @@
 // Example Colour Stacks
-$black:   tint-stack(#333);
-$red:     tint-stack(red);
-$orange:  tint-stack(orange);
-$yellow:  tint-stack(yellow);
-$green:   tint-stack(green);
-$blue:    tint-stack(blue);
-$purple:  tint-stack(purple);
+$black:    tint-stack(#282828);
+$red:      tint-stack(red);
+$orange:   tint-stack(#FF8800);
+$yellow:   tint-stack(yellow);
+$green:    tint-stack(green);
+$blue:     tint-stack(blue);
+$purple:   tint-stack(purple);
+$slate:    tint-stack(#7D979F);
+$blue-drk: tint-stack(#189AC9);
+$blue-lte: tint-stack(#3ECDFC);

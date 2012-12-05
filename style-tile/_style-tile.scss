@@ -19,6 +19,13 @@
   }
 }
 
+$headerGradTop: #585858;
+$headerGradMid: #343434;
+$headerGradBtm: #1f1f1f;
+
+
+
+
 #navContainer {
   display: inline-block;
   height: 4em;
@@ -40,11 +47,11 @@
 }
 #headerContainer {
   display: inline-block;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #585858), color-stop(50%, #343434), color-stop(100%, #1f1f1f));
-  background: -webkit-linear-gradient(#585858, #343434 50%, #1f1f1f);
-  background: -moz-linear-gradient(#585858, #343434 50%, #1f1f1f);
-  background: -o-linear-gradient(#585858, #343434 50%, #1f1f1f);
-  background: linear-gradient(#585858, #343434 50%, #1f1f1f);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, $headerGradTop), color-stop(50%, $headerGradMid), color-stop(100%, $headerGradBtm));
+  background: -webkit-linear-gradient($headerGradTop, $headerGradMid 50%, $headerGradBtm);
+  background: -moz-linear-gradient($headerGradTop, $headerGradMid 50%, $headerGradBtm);
+  background: -o-linear-gradient($headerGradTop, $headerGradMid 50%, $headerGradBtm);
+  background: linear-gradient($headerGradTop, $headerGradMid 50%, $headerGradBtm);
   border: 0px;
   height: 5em;
   width: 100%;

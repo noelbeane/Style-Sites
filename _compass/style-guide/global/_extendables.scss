@@ -4,3 +4,53 @@
 // All of your extendable classes, ids, and placeholder extendables
 //   should go in this file.
 ////////////////////////
+
+%league-gothic {
+  font-family: "league-gothic", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+%brevia {
+  font-family: "brevia", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+  em & {
+    font-style: italic;
+  }
+}
+
+%pragmatica-web {
+  font-family: "pragmatica-web", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+
+  em & {
+    font-style: italic;
+  }
+
+  strong & {
+    font-weight: 400;
+  }
+}
+
+%utopia {
+  font-family: "utopia-std", serif;
+  font-weight: 400;
+}
+
+%minion {
+  font-family: "minion-pro-condensed-subhead", serif;
+  font-weight: 600;
+}
+
+%bold-font {
+  font-weight: bold;
+}
+
+%text-shared {
+  line-height: golden-ratio() * 1em;
+  margin: 0;
+  padding: 0;
+}

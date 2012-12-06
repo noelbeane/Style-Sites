@@ -3,36 +3,147 @@
 //////////////////////////////
 @import "global/base";
 
-//////////////////////////////
-// Example Stle Guide goodies
-//////////////////////////////
+html {
+  font-size: 1em;
+}
 
-// Loop over all Header elements and make them progressively lighter based on the colours in our $black colour.
-@for $i from 1 through 6 {
-  h#{$i} {
-    color: nth($black, 1);
+body {
+  @extend %pragmatica-web;
+  margin: 0;
+  padding: 0;
+
+  color: nth($black, 1);
+}
+
+input,
+textarea {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: nth($blue-drk, 1);
+  @extend %bold-font;
+
+  &:hover {
+    color: nth($blue-lte, 1);
   }
 }
 
-// Example creating a basic Sassy Button
-.call-to-action {
-  @include sassy-button("shiny", 1.25em, 1em, nth($purple, 2));
-  text-decoration: none;
+#header {
+  padding: 1em 2em;
+
+  background: nth($black, 1);
+  @include background(
+    linear-gradient(nth($black, 2), nth($black, 1))
+  )
 }
 
-// Example creting an advanced Sassy Button that changes colour with attached class
-.big-button {
-  position: relative;
-  text-decoration: none;
+nav {
+  font-size: 2em;
 
-  @include sassy-button-structure(.25em, 1.25em);
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
-  @include sassy-button-gradient("matte", nth($slate, 1), $text-color: nth($black, 1), $text-style: "inset");
-  @include sassy-button-style("push", nth($slate, 3));
-
-  &.red {
-    @include sassy-button-gradient("matte", nth($blue-drk, 3), $text-color: nth($black, 1), $text-style: "inset");
-    @include sassy-button-style("push", nth($red, 3));
+  a {
+    @extend %league-gothic;
+    color: white;
+    padding-right: .625em;
+    text-transform: uppercase;
   }
 }
 
+p {
+  @extend %text-shared;
+  padding-bottom: golden-ratio() * 1em;
+
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -moz-margin-before: 0em;
+  -moz-margin-after: 0em;
+  -o-margin-before: 0em;
+  -o-margin-after: 0em;
+  -ms-margin-before: 0em;
+  -ms-margin-after: 0em;
+}
+
+h1 {
+  @extend %bold-font;
+  @extend %text-shared;
+  font-size: 2.25em;
+}
+
+h2 {
+  @extend %bold-font;
+  @extend %text-shared;
+  font-size: 1.75em;
+}
+
+h3 {
+  @extend %bold-font;
+  @extend %text-shared;
+  font-size: 1.35em;
+}
+
+h4 {
+  @extend %bold-font;
+  @extend %text-shared;
+  font-size: 1.2em;
+}
+
+h5 {
+  @extend %bold-font;
+  @extend %text-shared;
+  font-size: 1.075em
+}
+
+h6 {
+  @extend %bold-font;
+  @extend %text-shared;
+  font-size: 1em;
+}
+
+.messages {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em 2em;
+  @extend %bold-font;
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.status {
+  background: nth($green, 6);
+  border: 1px solid nth($green, 1);
+  color: nth(green, 1);
+}
+
+.warning {
+  background: nth($yellow, 5);
+  border: 1px solid nth($yellow, 1);
+}
+
+.error {
+  background: nth($red, 6);
+  border: 1px solid nth($red, 1);
+  color: nth($red, 1);
+}
+
+.pager {
+  @include horizontal-list;
+}
+
+.pager-current {
+  @extend %bold-font;
+}
+
+[type="submit"] {
+  @include sassy-button("shiny", .4em, 1em, nth($slate, 1));
+  padding: .25em 1em;
+}

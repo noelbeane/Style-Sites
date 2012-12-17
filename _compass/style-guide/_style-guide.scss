@@ -41,6 +41,7 @@ a {
 
 nav {
   font-size: 2em;
+  letter-spacing: 0.05em;
 
   ul {
     list-style: none;
@@ -73,7 +74,8 @@ p {
 h1 {
   @extend %bold-font;
   @extend %text-shared;
-  font-size: 2.25em;
+  font-size: 2.05em;
+  color: #666666;
 }
 
 h2 {
@@ -97,7 +99,8 @@ h4 {
 h5 {
   @extend %bold-font;
   @extend %text-shared;
-  font-size: 1.075em
+  font-size: 1.075em;
+  color: nth($blue-drk, 1);
 }
 
 h6 {

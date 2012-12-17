@@ -4,7 +4,7 @@
 // Everything from your Style Guide _base.scss are available
 //  including all of your colours.
 //////////////////////////////
-@include possible-colours(nth($black, 1), nth($slate, 1), nth($blue-drk, 1), nth($blue-lte, 1), nth($orange, 1));
+@include possible-colours(nth($black, 1), nth($slate, 1), nth($blue-drk, 1), nth($blue-lte, 1), nth($orange, 1), nth($red, 1), nth($yellow, 1), nth($green, 1));
 
 
 //////////////////////////////

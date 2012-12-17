@@ -605,16 +605,19 @@ p {
 }
 
 h1 {
-  font-size: 2.05em;
+  font-size: 2em;
   color: #666666;
+  line-height: 1.15em;
 }
 
 h2 {
   font-size: 1.75em;
+  line-height: 1.15em;
 }
 
 h3 {
   font-size: 1.35em;
+  line-height: 1.15em;
 }
 
 h4 {
@@ -624,6 +627,7 @@ h4 {
 h5 {
   font-size: 1.075em;
   color: #1897cd;
+  line-height: 1em;
 }
 
 h6 {

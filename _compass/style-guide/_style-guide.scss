@@ -74,20 +74,24 @@ p {
 h1 {
   @extend %bold-font;
   @extend %text-shared;
-  font-size: 2.05em;
+  font-size: 2em;
   color: #666666;
+  line-height: 1.15em;
+  
 }
 
 h2 {
   @extend %bold-font;
   @extend %text-shared;
   font-size: 1.75em;
+  line-height: 1.15em;
 }
 
 h3 {
   @extend %bold-font;
   @extend %text-shared;
   font-size: 1.35em;
+  line-height: 1.15em;
 }
 
 h4 {
@@ -95,12 +99,13 @@ h4 {
   @extend %text-shared;
   font-size: 1.2em;
 }
-
+/////////h5 is the style for thumbnail links//////////////
 h5 {
   @extend %bold-font;
   @extend %text-shared;
   font-size: 1.075em;
   color: nth($blue-drk, 1);
+  line-height: 1em;
 }
 
 h6 {

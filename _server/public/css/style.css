@@ -608,30 +608,77 @@ h1 {
   font-size: 2em;
   color: #666666;
   line-height: 1.25em;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0.5em;
+  -moz-margin-before: 0em;
+  -moz-margin-after: 0.5em;
+  -o-margin-before: 0em;
+  -o-margin-after: 0.5em;
+  -ms-margin-before: 0em;
+  -ms-margin-after: 0.5em;
 }
 
 h2 {
   font-size: 1.75em;
   line-height: 1.5em;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0.25em;
+  -moz-margin-before: 0em;
+  -moz-margin-after: 0.25em;
+  -o-margin-before: 0em;
+  -o-margin-after: 0.25em;
+  -ms-margin-before: 0em;
+  -ms-margin-after: 0.25em;
 }
 
 h3 {
   font-size: 1.35em;
   line-height: 1.15em;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0.25em;
+  -moz-margin-before: 0em;
+  -moz-margin-after: 0.25em;
+  -o-margin-before: 0em;
+  -o-margin-after: 0.25em;
+  -ms-margin-before: 0em;
+  -ms-margin-after: 0.25em;
 }
 
 h4 {
   font-size: 1.2em;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0.25em;
+  -moz-margin-before: 0em;
+  -moz-margin-after: 0.25em;
+  -o-margin-before: 0em;
+  -o-margin-after: 0.25em;
+  -ms-margin-before: 0em;
+  -ms-margin-after: 0.25em;
 }
 
 h5 {
   font-size: 1.075em;
-  color: #1897cd;
   line-height: 1em;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0.25em;
+  -moz-margin-before: 0em;
+  -moz-margin-after: 0.25em;
+  -o-margin-before: 0em;
+  -o-margin-after: 0.25em;
+  -ms-margin-before: 0em;
+  -ms-margin-after: 0.25em;
 }
 
 h6 {
   font-size: 1em;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0.25em;
+  -moz-margin-before: 0em;
+  -moz-margin-after: 0.25em;
+  -o-margin-before: 0em;
+  -o-margin-after: 0.25em;
+  -ms-margin-before: 0em;
+  -ms-margin-after: 0.25em;
 }
 
 .messages {
@@ -751,6 +798,24 @@ h6 {
 [type="submit"]::-moz-focus-inner {
   padding: 0 !important;
   margin: -1px !important;
+}
+
+.superscript {
+  color: #1897cd;
+  font-size: 0.75em;
+  font-weight: bold;
+  vertical-align: 0.4em;
+}
+
+.caption {
+  font-size: 1em;
+  color: #1897cd;
+  font-weight: bold;
+}
+
+.pane-title {
+  font-size: 1.45em;
+  color: #666666;
 }
 
 /* Color Guide */

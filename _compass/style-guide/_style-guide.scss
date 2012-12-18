@@ -77,6 +77,14 @@ h1 {
   font-size: 2em;
   color: #666666;
   line-height: 1.25em;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0.5em;
+  -moz-margin-before: 0em;
+  -moz-margin-after: 0.5em;
+  -o-margin-before: 0em;
+  -o-margin-after: 0.5em;
+  -ms-margin-before: 0em;
+  -ms-margin-after: 0.5em;
   
 }
 
@@ -85,6 +93,14 @@ h2 {
   @extend %text-shared;
   font-size: 1.75em;
   line-height: 1.5em;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0.25em;
+  -moz-margin-before: 0em;
+  -moz-margin-after: 0.25em;
+  -o-margin-before: 0em;
+  -o-margin-after: 0.25em;
+  -ms-margin-before: 0em;
+  -ms-margin-after: 0.25em;
 }
 
 h3 {
@@ -92,26 +108,57 @@ h3 {
   @extend %text-shared;
   font-size: 1.35em;
   line-height: 1.15em;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0.25em;
+  -moz-margin-before: 0em;
+  -moz-margin-after: 0.25em;
+  -o-margin-before: 0em;
+  -o-margin-after: 0.25em;
+  -ms-margin-before: 0em;
+  -ms-margin-after: 0.25em;
 }
 
 h4 {
   @extend %bold-font;
   @extend %text-shared;
   font-size: 1.2em;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0.25em;
+  -moz-margin-before: 0em;
+  -moz-margin-after: 0.25em;
+  -o-margin-before: 0em;
+  -o-margin-after: 0.25em;
+  -ms-margin-before: 0em;
+  -ms-margin-after: 0.25em;
 }
-/////////h5 is the style for thumbnail links//////////////
+
 h5 {
   @extend %bold-font;
   @extend %text-shared;
   font-size: 1.075em;
-  color: nth($blue-drk, 1);
   line-height: 1em;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0.25em;
+  -moz-margin-before: 0em;
+  -moz-margin-after: 0.25em;
+  -o-margin-before: 0em;
+  -o-margin-after: 0.25em;
+  -ms-margin-before: 0em;
+  -ms-margin-after: 0.25em;
 }
 
 h6 {
   @extend %bold-font;
   @extend %text-shared;
   font-size: 1em;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0.25em;
+  -moz-margin-before: 0em;
+  -moz-margin-after: 0.25em;
+  -o-margin-before: 0em;
+  -o-margin-after: 0.25em;
+  -ms-margin-before: 0em;
+  -ms-margin-after: 0.25em;
 }
 
 .messages {
@@ -154,4 +201,22 @@ h6 {
 [type="submit"] {
   @include sassy-button("shiny", .4em, 1em, nth($slate, 1));
   padding: .25em 1em;
+}
+
+.superscript {
+	color: nth($blue-drk, 1);
+	font-size: 0.75em;
+	font-weight: bold;
+	vertical-align: 0.4em;
+}
+
+.caption {
+  font-size: 1em;
+  color: nth($blue-drk, 1);
+  font-weight: bold;
+}
+
+.pane-title {
+  font-size: 1.45em;
+  color: #666666;
 }

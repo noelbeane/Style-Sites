@@ -199,7 +199,7 @@ h6 {
 }
 
 [type="submit"] {
-  @include sassy-button("shiny", .4em, 1em, nth($slate, 1));
+  @include sassy-button("shiny", .4em, 1em, nth($blue-drk, 1));
   padding: .25em 1em;
 }
 
@@ -219,4 +219,49 @@ h6 {
 .pane-title {
   font-size: 1.45em;
   color: #666666;
+}
+
+.call-to-action {
+  @include sassy-button("shiny", .4em, 1em, nth($blue-drk, 1));
+  padding: .25em 1em;
+}
+
+.subnav01 {
+  @include sassy-button("simple", 0em, 0.9em, nth($black, 3), nth($black, 2), nth($black, 6), "none");
+  padding: .5em 1em;
+  border-color: nth($black, 3);
+}
+
+.subnav02 {
+  @include sassy-button("simple", 0em, 0.9em, nth($black, 4), nth($black, 6), nth($black, 2), "none");
+  padding: .5em 1em;
+  border-color: nth($black, 3);
+}
+
+.buttons ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  padding-bottom: 5em;
+}
+.buttons ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.buttons ul li:first-child, .buttons ul li.first {
+  padding-left: 0;
+}
+.buttons ul li:last-child {
+  padding-right: 0;
+}
+.buttons ul li.last {
+  padding-right: 0;
 }

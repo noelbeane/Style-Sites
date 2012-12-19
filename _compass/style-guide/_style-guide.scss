@@ -59,8 +59,8 @@ nav {
 
 p {
   @extend %text-shared;
-  padding-bottom: golden-ratio() * 1em;
-
+  padding-bottom: golden-ratio() *0.6em;
+  line-height: 1.5em;
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
   -moz-margin-before: 0em;
@@ -77,14 +77,14 @@ h1 {
   font-size: 2em;
   color: #666666;
   line-height: 1.25em;
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0.5em;
-  -moz-margin-before: 0em;
-  -moz-margin-after: 0.5em;
-  -o-margin-before: 0em;
-  -o-margin-after: 0.5em;
-  -ms-margin-before: 0em;
-  -ms-margin-after: 0.5em;
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after: 0.2em;
+  -moz-margin-before: 0.5em;
+  -moz-margin-after: 0.2em;
+  -o-margin-before: 0.5em;
+  -o-margin-after: 0.2em;
+  -ms-margin-before: 0.5em;
+  -ms-margin-after: 0.2em;
   
 }
 
@@ -92,15 +92,39 @@ h2 {
   @extend %bold-font;
   @extend %text-shared;
   font-size: 1.75em;
-  line-height: 1.5em;
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0.25em;
-  -moz-margin-before: 0em;
-  -moz-margin-after: 0.25em;
-  -o-margin-before: 0em;
-  -o-margin-after: 0.25em;
-  -ms-margin-before: 0em;
-  -ms-margin-after: 0.25em;
+  line-height: 1.25em;
+  padding-bottom: golden-ratio() * 1em;
+  padding-top: golden-ratio() * 0.75em;
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after: 0em;
+  -moz-margin-before: 0.5em;
+  -moz-margin-after: 0em;
+  -o-margin-before: 0.5em;
+  -o-margin-after: 0em;
+  -ms-margin-before: 0.5em;
+  -ms-margin-after: 0em;
+}
+
+p + h2 {
+  -webkit-margin-before: 0.3em;
+  -webkit-margin-after: -1.7em;
+  -moz-margin-before: 0.3em;
+  -moz-margin-after: -1.7em;
+  -o-margin-before: 0.3em;
+  -o-margin-after: -1.7em;
+  -ms-margin-before: 0.3em;
+  -ms-margin-after: -1.7em;
+}
+
+h2 + img {
+  -webkit-margin-before: -2.2em;
+  -webkit-margin-after: 0em;
+  -moz-margin-before: -2.2em;
+  -moz-margin-after: 0em;
+  -o-margin-before: -2.2em;
+  -o-margin-after: 0em;
+  -ms-margin-before: -2.2em;
+  -ms-margin-after: 0em;
 }
 
 h3 {
@@ -214,6 +238,15 @@ h6 {
   font-size: 1em;
   color: nth($blue-drk, 1);
   font-weight: bold;
+  padding-bottom: golden-ratio() * 0.7em;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -moz-margin-before: 0em;
+  -moz-margin-after: 0em;
+  -o-margin-before: 0em;
+  -o-margin-after: 0em;
+  -ms-margin-before: 0em;
+  -ms-margin-after: 0em;
 }
 
 .pane-title {
@@ -223,6 +256,11 @@ h6 {
 
 .call-to-action {
   @include sassy-button("shiny", .4em, 1em, nth($blue-drk, 1));
+  padding: .25em 1em;
+}
+
+.cta-disabled {
+  @include sassy-button("shiny", .4em, 1em, nth($blue-drk, 4), nth($slate, 3), nth($slate, 1));
   padding: .25em 1em;
 }
 
@@ -264,4 +302,169 @@ h6 {
 }
 .buttons ul li.last {
   padding-right: 0;
+}
+
+.kicker {
+  @extend %text-shared;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -moz-margin-before: 0em;
+  -moz-margin-after: 0em;
+  -o-margin-before: 0em;
+  -o-margin-after: 0em;
+  -ms-margin-before: 0em;
+  -ms-margin-after: 0em;
+}
+
+.kicker + h2 {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -moz-margin-before: 0em;
+  -moz-margin-after: 0em;
+  -o-margin-before: 0em;
+  -o-margin-after: 0em;
+  -ms-margin-before: 0em;
+  -ms-margin-after: 0em;
+}
+
+.sidenote h1 {
+  color: nth($slate, 1);
+  @extend %bold-font;
+  @extend %text-shared;
+  font-size: 1.75em;
+  -webkit-margin-before: 1.25em;
+  -webkit-margin-after: -0.2em;
+  -moz-margin-before: 1.25em;
+  -moz-margin-after: -0.2em;
+  -o-margin-before: 1.25em;
+  -o-margin-after: -0.2em;
+  -ms-margin-before: 1.25em;
+  -ms-margin-after: -0.2em;
+}
+
+.sidenote p {
+  color: nth($slate, 1);
+  padding-bottom: golden-ratio() *0.6em;
+}
+
+
+.sidenote li {
+  color: nth($slate, 1);
+  padding-left: golden-ratio() * 0.5em;
+  padding-right: golden-ratio() * 0.5em;
+}
+
+.sidenote p + ul li:first-child {
+  -webkit-margin-before: -1.5em;
+  -webkit-margin-after: 0em;
+  -moz-margin-before: -1.5em;
+  -moz-margin-after: 0em;
+  -o-margin-before: -1.5em;
+  -o-margin-after: 0em;
+  -ms-margin-before: -1.5em;
+  -ms-margin-after: 0em;
+}
+
+.sidenote p + ul li:last-child {
+  padding-bottom: golden-ratio() * 0.2em;
+}
+
+blockquote p {
+  color: nth($slate, 1);
+  padding-left: golden-ratio() * 0.5em;
+  padding-right: golden-ratio() * 0.5em;
+  -webkit-margin-before: -0.5em;
+  -webkit-margin-after: -1.5em;
+  -moz-margin-before: -0.5em;
+  -moz-margin-after: -1.5em;
+  -o-margin-before: -0.5em;
+  -o-margin-after: -1.5em;
+  -ms-margin-before: -0.5em;
+  -ms-margin-after: -1.5em;
+}
+
+cite {
+  color: nth($slate, 1);
+  padding-left: golden-ratio() * 2em;
+  padding-right: golden-ratio() * 2em;
+}
+
+cite + h2 {
+  -webkit-margin-before: 0.75em;
+  -webkit-margin-after: -1.5em;
+  -moz-margin-before: 0.75em;
+  -moz-margin-after: -1.5em;
+  -o-margin-before: 0.75em;
+  -o-margin-after: -1.5em;
+  -ms-margin-before: 0.75em;
+  -ms-margin-after: -1.5em;
+}
+
+p + ul li:first-child {
+  -webkit-margin-before: -1.5em;
+  -webkit-margin-after: 0em;
+  -moz-margin-before: -1.5em;
+  -moz-margin-after: 0em;
+  -o-margin-before: -1.5em;
+  -o-margin-after: 0em;
+  -ms-margin-before: -1.5em;
+  -ms-margin-after: 0em;
+}
+
+p + ol li:first-child {
+  -webkit-margin-before: -1.5em;
+  -webkit-margin-after: 0em;
+  -moz-margin-before: -1.5em;
+  -moz-margin-after: 0em;
+  -o-margin-before: -1.5em;
+  -o-margin-after: 0em;
+  -ms-margin-before: -1.5em;
+  -ms-margin-after: 0em;
+}
+
+code {
+  color: nth($black, 3);
+  font-size: 1em;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -moz-margin-before: 0em;
+  -moz-margin-after: 0em;
+  -o-margin-before: 0em;
+  -o-margin-after: 0em;
+  -ms-margin-before: 0em;
+  -ms-margin-after: 0em;
+}
+
+dl dt {
+  @extend %bold-font;
+  @extend %text-shared;
+  font-size: 1em;
+}
+
+dl dd {
+  font-size: 1em;
+  padding-bottom: golden-ratio() * 1.5em;
+}
+
+dl {
+  padding-top: golden-ratio() * 1.5em;
+}
+
+dl + p {
+  -webkit-margin-before: -1em;
+  -webkit-margin-after: 0em;
+  -moz-margin-before: -1em;
+  -moz-margin-after: 0em;
+  -o-margin-before: -1em;
+  -o-margin-after: 0em;
+  -ms-margin-before: -1em;
+  -ms-margin-after: 0em;
+}
+
+.footnote li {
+  padding-bottom: golden-ratio() * 0.5em;
+}
+
+.footnote li:first-child{
+  padding-top: golden-ratio() * 0.5em;
 }

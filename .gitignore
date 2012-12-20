@@ -1,2 +1,7 @@
 .sass-cache
 .DS_Store
+/.DS_Store
+/_compass/.DS_Store
+/_compass/templates/.DS_Store
+/_compass/templates/project/.DS_Store
+/_compass/templates/project/js/.DS_Store

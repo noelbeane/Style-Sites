@@ -25,3 +25,12 @@
 #drupal-messages .messages {
   margin-bottom: 1.5em;
 }
+
+.buttons {
+  @include horizontal-list;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+}

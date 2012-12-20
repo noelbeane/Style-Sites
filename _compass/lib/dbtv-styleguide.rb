@@ -13,7 +13,7 @@ require 'sassy-buttons'
 base_directory  = File.join(File.dirname(__FILE__), '..')
 stylesheets_dir = File.join(base_directory, 'style-guide')
 templates_dir   = File.join(base_directory, 'templates')
-Compass::Frameworks.register('client-styleguide', :stylesheets_directory => stylesheets_dir, :templates_directory => templates_dir)
+Compass::Frameworks.register('dbtv-styleguide', :stylesheets_directory => stylesheets_dir, :templates_directory => templates_dir)
 
 # Version and date of version for your Compass extension.
 # Replace Styleguide with the name of your style guide
@@ -21,9 +21,9 @@ Compass::Frameworks.register('client-styleguide', :stylesheets_directory => styl
 #  Version is a number. If a version contains alphas, it will be created as
 #    a prerelease version
 #  Date is in the form of YYYY-MM-DD
-module Client_Styleguide
-  VERSION = "1.0"
-  DATE = "2012-10-13"
+module DBtv_Styleguide
+  VERSION = "1.2"
+  DATE = "2012-12-20"
 end
 
 # This is where any custom SassScript should be placed. The functions will be

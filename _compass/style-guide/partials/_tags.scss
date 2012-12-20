@@ -1,0 +1,154 @@
+html {
+  font-size: 1em;
+}
+
+body {
+  @extend %pragmatica-web;
+  margin: 0;
+  padding: 0;
+
+  color: nth($black, 1);
+}
+
+input,
+textarea {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: nth($blue-drk, 1);
+  @extend %bold-font;
+
+  &:hover {
+    color: nth($blue-lte, 1);
+  }
+}
+
+nav {
+  font-size: 2em;
+  letter-spacing: 0.05em;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    @extend %league-gothic;
+    color: white;
+    padding-right: .625em;
+    text-transform: uppercase;
+  }
+}
+
+p {
+  @extend %reset-ua-margins;
+  @extend %text-shared;
+  @extend %end-padding;
+  line-height: 1.5em;
+
+}
+
+h1 {
+  @extend %reset-ua-margins;
+  @extend %bold-font;
+  @extend %text-shared;
+  font-size: 2em;
+  color: nth($grey, 1);
+  line-height: 1.25em;
+  padding-top: .5em;
+  padding-bottom: .2em;
+}
+
+h2 {
+  @extend %reset-ua-margins;
+  @extend %bold-font;
+  @extend %text-shared;
+  font-size: 1.75em;
+  line-height: 1.25em;
+  padding-bottom: golden-ratio() * 1em;
+  padding-top: golden-ratio() * 0.75em;
+  padding-top: .5em;
+  padding-bottom: 0em;
+
+  p + & {
+    padding-top: .3em;
+    padding-bottom: -1.7em;
+  }
+
+
+  + img {
+    padding-top: -2.2em;
+    padding-bottom: 0;
+  }
+}
+
+h3 {
+  @extend %reset-ua-margins;
+  @extend %bold-font;
+  @extend %text-shared;
+  @extend %standard-padding;
+  font-size: 1.35em;
+  line-height: 1.15em;
+}
+
+h4 {
+  @extend %reset-ua-margins;
+  @extend %bold-font;
+  @extend %text-shared;
+  @extend %standard-padding;
+  font-size: 1.2em;
+}
+
+h5 {
+  @extend %reset-ua-margins;
+  @extend %bold-font;
+  @extend %text-shared;
+  @extend %standard-padding;
+  font-size: 1.075em;
+  line-height: 1em;
+}
+
+h6 {
+  @extend %reset-ua-margins;
+  @extend %bold-font;
+  @extend %text-shared;
+  @extend %standard-padding;
+  font-size: 1em;
+}
+
+blockquote {
+  @extend %reset-ua-margins;
+  color: nth($slate, 1);
+  padding: .5em (golden-ratio() * 0.5em);
+}
+
+cite {
+  color: nth($slate, 1);
+  padding-left: golden-ratio() * 2em;
+  padding-right: golden-ratio() * 2em;
+  display: inline-block;
+  padding-bottom: .5em;
+}
+
+code {
+  @extend %reset-ua-margins;
+  color: nth($black, 3);
+  font-size: 1em;
+}
+
+ul {
+  @extend %list-shared;
+}
+
+li {
+  &:last-child {
+    @extend %end-padding;
+  }
+}
+
+ol {
+  @extend %list-shared;
+}

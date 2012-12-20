@@ -1,0 +1,86 @@
+@import "messages/shared";
+@import "messages/messages";
+
+.page-wrapper {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  @include clearfix;
+
+  &.header {
+    background: nth($black, 1);
+    @include background(
+      linear-gradient(nth($black, 2), nth($black, 1))
+    );
+  }
+
+  &.main {
+    background: white;
+  }
+}
+
+
+.pager {
+  @include horizontal-list;
+}
+
+.pager-current {
+  @extend %bold-font;
+}
+
+.superscript {
+  font-size: 0.75em;
+  vertical-align: 0.4em;
+}
+
+.subscript {
+  font-size: .75em;
+  vertical-align: -.4em;
+}
+
+.caption {
+  @extend %reset-ua-margins;
+  font-size: 1em;
+  padding-bottom: golden-ratio() * 0.7em;
+  padding-top: 0em;
+}
+
+.pane-title {
+  font-size: 1.45em;
+  color: #666666;
+}
+
+.call-to-action {
+  @include sassy-button("shiny", .4em, 1em, nth($blue-drk, 1));
+  padding: .25em 1em;
+}
+
+.cta-disabled {
+  @include sassy-button("shiny", .4em, 1em, nth($blue-drk, 4), nth($slate, 3), nth($slate, 1));
+  padding: .25em 1em;
+}
+
+.subnav01 {
+  @include sassy-button("simple", 0em, 0.9em, nth($black, 3), nth($black, 2), nth($black, 6), "none");
+  padding: .5em 1em;
+  border-color: nth($black, 3);
+}
+
+.subnav02 {
+  @include sassy-button("simple", 0em, 0.9em, nth($black, 4), nth($black, 6), nth($black, 2), "none");
+  padding: .5em 1em;
+  border-color: nth($black, 3);
+}
+
+.kicker {
+  @extend %reset-ua-margins;
+  @extend %text-shared;
+}
+
+.sidenote {
+  color: nth($slate, 1);
+
+  h1 {
+    color: nth($slate, 1);
+  }
+}

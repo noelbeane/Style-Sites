@@ -54,3 +54,30 @@
   margin: 0;
   padding: 0;
 }
+
+%reset-ua-margins {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -moz-margin-before: 0em;
+  -moz-margin-after: 0em;
+  -o-margin-before: 0em;
+  -o-margin-after: 0em;
+  -ms-margin-before: 0em;
+  -ms-margin-after: 0em;
+}
+
+%standard-padding {
+  padding-top: 0em;
+  padding-bottom: 0em;
+}
+
+%list-shared {
+  margin: 0;
+  padding: 0;
+
+  margin-left: 2.4em;
+}
+
+%end-padding {
+  padding-bottom: golden-ratio() *0.6em;
+}

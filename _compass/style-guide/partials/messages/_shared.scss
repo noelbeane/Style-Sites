@@ -1,10 +1,10 @@
-.messages {
+%messages {
   width: 80%;
   margin: 0 auto;
   padding: 1em 2em;
   @extend %bold-font;
 
-  * {
+  p {
     margin: 0;
     padding: 0;
   }

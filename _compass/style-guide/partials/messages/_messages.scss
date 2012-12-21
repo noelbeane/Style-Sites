@@ -1,15 +1,18 @@
 .status {
+  @extend %messages;
   background: nth($green, 6);
   border: 1px solid nth($green, 1);
   color: nth(green, 1);
 }
 
 .warning {
+  @extend %messages;
   background: nth($yellow, 5);
   border: 1px solid nth($yellow, 1);
 }
 
 .error {
+  @extend %messages;
   background: nth($red, 6);
   border: 1px solid nth($red, 1);
   color: nth($red, 1);

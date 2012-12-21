@@ -1,0 +1,34 @@
+.dropdown-toggle {
+  float: right;
+
+  margin: {
+    top: -2.2em;
+  }
+
+  padding: 0;
+  border: 0;
+
+  display: block;
+
+  .no-js & {
+    display: none;
+  }
+
+  @include hide-text;
+
+  @include enhance-with('svg') {
+    background-image: inline-image("navToggle.svg");
+  }
+  @include degrade-from('svg') {
+    background-image: inline-image("navToggle.png");
+  }
+
+  height: image-height('navToggle.png');
+  width: image-width('navToggle.png');
+
+  background-repeat: no-repeat;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

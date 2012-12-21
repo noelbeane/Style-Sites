@@ -1,0 +1,22 @@
+%tabs-horizontal {
+
+  @include horizontal-list;
+
+  a {
+    @extend .subnav01;
+  }
+
+  .active a,
+  a:hover {
+    @extend .subnav02;
+  }
+
+  li {
+    padding-bottom: 0;
+    margin-bottom: -1px;
+  }
+
+  ul {
+    border-bottom: 1px solid nth($black, 2);
+  }
+}

@@ -3,7 +3,7 @@
 -#  If you'd like to include a fallback if Google's CDN isn't available, change the related Fallback variable to the name of the file locally (for instance, if you had jquery-1.6-min.js, write jquery-1.6-min). Wrap in quotes. Place the fallback file inside of js/libs
 -#  The code to include jQuery UI will only be written if you also include a version of jQuery
 -# If you plan on using a full JavaScript library, be sure to remove Chibi from the list of Custom JS.
-- @jQuery = false
+- @jQuery = '1.7.2'
 - @jQueryFallback = false
 
 - @jQueryUI = false
@@ -20,4 +20,4 @@
 
 -# If you'd like to add Custom JS to the site, simply add on to the array below, in the order you'd like them to appear. Your Frameworks will get loaded before these files.
 
-- @customJS = ['/js/libs/chibi-min.js', '/js/libs/hammer.js']
+- @customJS = ['/js/libs/modernizr.min.js', '/js/libs/jquery.flexslider-min.js',  '/js/dropdown-toggle.js', '/js/promoted.js']

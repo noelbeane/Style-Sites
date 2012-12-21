@@ -1,0 +1,1 @@
+jQuery(document).ready(function(e){e(".dropdown-toggle").click(function(){e(this).toggleClass("open")})})

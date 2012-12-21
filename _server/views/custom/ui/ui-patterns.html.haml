@@ -1,4 +1,4 @@
-= render :template => "../../../../style-tile/tile.haml"
+= render :template => "../../../../style-site/tile.haml"
 - @title = "UI Patterns"
 - @subnav = "<nav class='section-nav'></nav> "
 
@@ -8,3 +8,8 @@
   = render :template => "../drupal/patterns/_messages.haml"
   = render :template => "../drupal/patterns/_pager.haml"
   = render :template => "patterns/_buttons.haml"
+
+%section#dbtv-patterns.element-group
+  %h1.section-title DBtv Patterns
+  = render :template => "patterns/_tabs.haml"
+  = render :template => "patterns/_promoted-slider.haml"

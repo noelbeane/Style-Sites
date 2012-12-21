@@ -7,8 +7,9 @@
     - @host = "#{request.protocol}#{request.host_with_port}"
     - @url = "#{request.url}"
     - @url[@host] = ''
-    %nav.primary-links
-      %ul
+    %nav#block-system-main-menu.block.block-system.block-menu
+      %b.dropdown-toggle Menu
+      %ul.menu
         - @sections.each_with_index do |url, i|
           %li
             %a{:href => "#{url[1]}", :class => ('active' if @url == "#{url[1]}")}

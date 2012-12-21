@@ -34,3 +34,38 @@
     padding: 0;
   }
 }
+
+#header {
+  @include breakpoint($vertical-horizontal-nav 'max-width') {
+    padding-bottom: 0em;
+  }
+}
+
+.menu {
+  height: 0em;
+
+  @include transition-property('height');
+  @include transition-duration(.35s);
+
+  .open + & {
+    height: 11em;
+  }
+
+  @include breakpoint($vertical-horizontal-nav) {
+    height: auto;
+
+    .open + & {
+      height: auto;
+    }
+  }
+}
+
+.dropdown-toggle {
+  @include breakpoint($vertical-horizontal-nav) {
+    display: none;
+  }
+}
+
+.tabs {
+  @extend %tabs-horizontal;
+}

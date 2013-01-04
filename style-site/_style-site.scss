@@ -67,5 +67,5 @@
 }
 
 .tabs {
-  @extend %tabs-horizontal;
+  @include tabs-horizontal;
 }

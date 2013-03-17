@@ -22,8 +22,8 @@ Compass::Frameworks.register('dbtv-styleguide', :stylesheets_directory => styles
 #    a prerelease version
 #  Date is in the form of YYYY-MM-DD
 module DBtv_Styleguide
-  VERSION = "1.2"
-  DATE = "2012-12-20"
+  VERSION = "1.3.5"
+  DATE = "2013-01-10"
 end
 
 # This is where any custom SassScript should be placed. The functions will be

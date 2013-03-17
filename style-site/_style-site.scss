@@ -4,6 +4,8 @@
 // Everything from your Style Guide _base.scss are available
 //  including all of your colours.
 //////////////////////////////
+@import "../style-guide/dbtv-flexslider";
+
 @include possible-colours(nth($black, 1), nth($slate, 1), nth($blue-drk, 1), nth($blue-lte, 1), nth($orange, 1), nth($red, 1), nth($yellow, 1), nth($green, 1));
 
 
@@ -41,31 +43,18 @@
   }
 }
 
-.menu {
-  height: 0em;
-
-  @include transition-property('height');
-  @include transition-duration(.35s);
-
-  .open + & {
-    height: 11em;
-  }
-
-  @include breakpoint($vertical-horizontal-nav) {
-    height: auto;
-
-    .open + & {
-      height: auto;
-    }
-  }
-}
-
-.dropdown-toggle {
-  @include breakpoint($vertical-horizontal-nav) {
-    display: none;
-  }
-}
+@include expanding-menu(11em, $vertical-horizontal-nav);
 
 .tabs {
   @include tabs-horizontal;
+}
+
+.content-wrapper {
+  max-width: 1024px;
+}
+
+#drupal-messages {
+  background: nth($black, 1);
+
+  padding-bottom: 2em;
 }

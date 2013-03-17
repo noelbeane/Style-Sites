@@ -56,13 +56,13 @@
     #header.page-wrapper
       .content-wrapper
         =render :template => "_header.haml"
-    #nav.page-wrapper
+    #nav.page-wrapper.header
       .content-wrapper
         =render :template => "_nav.haml"
-    #main.page-wrapper{ :role => "main" }
+    #main.page-wrapper.main{ :role => "main" }
       .content-wrapper
         = yield
-    #footer.page-wrapper
+    #footer.page-wrapper.footer
       .content-wrapper
         %footer
 

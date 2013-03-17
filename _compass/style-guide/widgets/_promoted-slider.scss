@@ -1,0 +1,63 @@
+.media-wrapper {
+  position: relative;
+}
+
+.promo-marquee {
+  position: absolute;
+  z-index: 100;
+
+  color: nth($blue-drk, 2);
+  background: nth($black, 1);
+  background: rgba(nth($black, 1), .85);
+
+  @extend %europa;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @include breakpoint(666px) {
+    font-size: 1.25em;
+  }
+
+  max-width: 20em;
+  padding: .875em;
+
+  &.topleft {
+    top: $marquee-padding;
+    left: $marquee-padding;
+  }
+
+  &.topright {
+    top: $marquee-padding;
+    right: $marquee-padding;
+  }
+
+  &.bottomleft {
+    bottom: $marquee-padding;
+    left: $marquee-padding;
+  }
+
+  &.bottomright {
+    bottom: $marquee-padding;
+    right: $marquee-padding;
+  }
+}
+
+.flex-viewport .view-mode-promoted_content {
+  @extend %europa;
+
+  figcaption {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    @extend %bold-font;
+
+    padding: $promoted-padding;
+    margin-top: -.27em;
+
+    color: nth($grey, 4);
+    background: nth($black, 1);
+  }
+
+  .details {
+    color: $link-blue;
+  }
+}

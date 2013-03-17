@@ -3,12 +3,12 @@
   @include horizontal-list;
 
   a {
-    @extend .subnav01;
+    @include subnav01;
   }
 
   .active a,
   a:hover {
-    @extend .subnav02;
+    @include subnav02;
   }
 
   li {

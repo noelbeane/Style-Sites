@@ -8,6 +8,7 @@ body {
   padding: 0;
 
   color: nth($black, 1);
+  background-color: nth($black, 1);
 }
 
 input,
@@ -18,6 +19,7 @@ textarea {
 a {
   text-decoration: none;
   color: nth($blue-drk, 1);
+  @include single-transition(color, .125s);
   @extend %bold-font;
 
   &:hover {
@@ -26,7 +28,7 @@ a {
 }
 
 nav {
-  font-size: 2em;
+  font-size: 1.75em;
   letter-spacing: 0.05em;
 
   ul {
@@ -36,7 +38,7 @@ nav {
   }
 
   a {
-    @extend %league-gothic;
+    @extend %europa;
     color: white;
     padding-right: .625em;
     text-transform: uppercase;

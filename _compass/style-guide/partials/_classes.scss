@@ -1,6 +1,3 @@
-@import "messages/shared";
-@import "messages/messages";
-
 .page-wrapper {
   width: 100%;
   padding: 0;
@@ -13,12 +10,15 @@
       linear-gradient(nth($black, 2), nth($black, 1))
     );
   }
-
-  &.main {
-    background: white;
-  }
 }
 
+.content-wrapper {
+  margin: 0 auto;
+
+  #main & {
+    background: #fff;
+  }
+}
 
 .pager {
   @include horizontal-list;
@@ -61,15 +61,11 @@
 }
 
 .subnav01 {
-  @include sassy-button("simple", 0em, 0.9em, nth($black, 3), nth($black, 2), nth($black, 6), "none");
-  padding: .5em 1em;
-  border-color: nth($black, 3);
+  @include subnav01;
 }
 
 .subnav02 {
-  @include sassy-button("simple", 0em, 0.9em, nth($black, 4), nth($black, 6), nth($black, 2), "none");
-  padding: .5em 1em;
-  border-color: nth($black, 3);
+  @include subnav02;
 }
 
 .kicker {

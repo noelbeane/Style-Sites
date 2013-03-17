@@ -1,0 +1,20 @@
+%messages {
+  width: 80%;
+  margin: 0 auto;
+  padding: $promoted-padding;
+  @extend %bold-font;
+  background: white;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  @include border-radius(5px);
+}

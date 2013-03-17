@@ -1,170 +1,128 @@
-/* FlexSlider Default Theme
-*********************************/
-
-.flexslider {
-  margin: 0 0 60px;
-  background: #fff;
-  border: 4px solid #fff;
+.slider {
   position: relative;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  zoom: 1;
-
-  .slides {
-    zoom: 1;
-  }
-
-  &:hover {
-    .flex-next {
-      opacity: 0.8;
-      right: 5px;
-    }
-    .flex-prev {
-      opacity: 0.8;
-      left: 5px;
-    }
-    .flex-next:hover, .flex-prev:hover {
-      opacity: 1;
-    }
-  }
+  @include clearfix;
 }
 
-.flex-viewport {
-  max-height: 2000px;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  transition: all 1s ease;
-
-  .loading & {
-    max-height: 300px;
-  }
-}
-
-.carousel li {
-  margin-right: 5px;
-}
-
-// Directional Nav
-
+//////////////////////////////
+// Flexslider Arrow Nav
+//////////////////////////////
 .flex-direction-nav {
-  *height: 0;
-  a {
-    width: 30px;
-    height: 30px;
-    margin: -20px 0 0;
-    display: block;
-    background: url('../images/assets/flexslider/bg_direction_nav.png') no-repeat 0 0;
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    cursor: pointer;
-    text-indent: -9999px;
-    opacity: 0;
-    -webkit-transition: all .3s ease;
+  @include enhance-with('touch') {
+    display: none;
   }
 
-  .flex-next {
-    background-position: 100% 0;
-    right: -36px;
-    opacity: 0;
+  @include degrade-from('touch') {
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      @include squish-text;
 
-    @include breakpoint(765px) {
-      opacity: 1;
-      right: 0;
-    }
-    @include respond-to('small fixed width') {
-      right: -18px;
-    }
-    @include respond-to('large fixed width') {
-      right: 0;
-    }
-  }
+      &:hover {
+        &:before {
+          content: '';
+          display: block;
+          height: $flexbox-box-size;
+          width: $flexbox-box-size;
+          background: nth($black, 1);
+          background: rgba(nth($black, 1), .75);
+          border-radius: 5px;
+          border: 2px solid nth($slate, 6);
+        }
 
-  .flex-prev {
-    left: -36px;
-    opacity: 0;
+        &:after {
+          content: '';
+          display: block;
+          width: 0;
+          height: 0;
+          margin-top: ($flexbox-box-size - 7px) * -1;
+          border-top: $flexbox-triangle-size solid transparent;
+          border-bottom: $flexbox-triangle-size solid transparent;
+        }
+      }
+    }
 
-    @include breakpoint(765px) {
-      opacity: 1;
-      left: 0;
-    }
-    @include respond-to('small fixed width') {
-      left: -18px;
-    }
-    @include respond-to('large fixed width') {
-      left: 0;
-    }
-  }
+    li {
+      position: absolute;
+      top: 0;
+      width: 50px;
+      height: 100%;
 
-  .flex-disabled {
-    opacity: .3!important;
-    filter: alpha(opacity = 30);
-    cursor: default;
+      // &:hover {
+      //   background: rgba(#000, .5);
+      // }
+
+      &:first-child {
+        left: 0;
+
+        a:hover {
+          &:before {
+            float: left;
+            margin-left: 7px;
+          }
+          &:after {
+            float: left;
+            margin-left: 18px;
+            border-right: $flexbox-triangle-size solid nth($slate, 6);
+          }
+        }
+      }
+
+      &:last-child {
+        right: 0;
+
+        a:hover {
+          &:before {
+            float: right;
+            margin-right: 7px;
+          }
+          &:after {
+            float: right;
+            margin-right: 18px;
+            border-left: $flexbox-triangle-size solid nth($slate, 6);
+          }
+        }
+      }
+    }
   }
 }
 
-// Control Nav
-
+//////////////////////////////
+// Flexslider Dotted Navigation
+//////////////////////////////
 .flex-control-nav {
   width: 100%;
-  position: absolute;
-  bottom: -40px;
+  bottom: 0;
   text-align: center;
+
   li {
     margin: 0 6px;
+    padding: 0;
     display: inline-block;
     zoom: 1;
     *display: inline;
   }
 }
 
-.flex-control-paging li a {
-  width: 11px;
-  height: 11px;
-  display: block;
-  background: nth($orange, 4);
-  cursor: pointer;
-  text-indent: -9999px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -o-border-radius: 20px;
-  border-radius: 20px;
-  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  &:hover {
-    background: nth($orange, 3);
-  }
-  &.flex-active {
-    background: nth($orange, 2);
-    cursor: default;
-  }
-}
-
-.flex-control-thumbs {
-  margin: 5px 0 0;
-  position: static;
-  overflow: hidden;
-  li {
-    width: 25%;
-    float: left;
-    margin: 0;
-  }
-  img {
-    width: 100%;
+.flex-control-paging {
+  a {
     display: block;
-    opacity: .7;
     cursor: pointer;
+    text-indent: -9999px;
+
+    background: nth($grey, 4);
+    // box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+
+    width: $flexbox-circle-size;
+    height: $flexbox-circle-size;
+    border-radius: $flexbox-circle-size;
+
     &:hover {
-      opacity: 1;
+      background: nth($slate, 3);
     }
-  }
-  .flex-active {
-    opacity: 1;
-    cursor: default;
+    &.flex-active {
+      background: nth($slate, 1);
+      cursor: default;
+    }
   }
 }

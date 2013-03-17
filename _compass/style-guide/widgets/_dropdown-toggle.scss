@@ -14,19 +14,19 @@
     display: none;
   }
 
-  @include hide-text;
+  // @include hide-text;
 
-  @include enhance-with('svg') {
-    background-image: inline-image("navToggle.svg");
-  }
-  @include degrade-from('svg') {
-    background-image: inline-image("navToggle.png");
-  }
+  // @include enhance-with('svg') {
+  //   background-image: inline-image("navToggle.svg");
+  // }
+  // @include degrade-from('svg') {
+  //   background-image: inline-image("navToggle.png");
+  // }
 
-  height: image-height('navToggle.png');
-  width: image-width('navToggle.png');
+  // height: image-height('navToggle.png');
+  // width: image-width('navToggle.png');
 
-  background-repeat: no-repeat;
+  // background-repeat: no-repeat;
 
   &:hover {
     cursor: pointer;

@@ -2,7 +2,7 @@
   @extend %messages;
   background: nth($green, 6);
   border: 1px solid nth($green, 1);
-  color: nth(green, 1);
+  color: nth($green, 1);
 }
 
 .warning {

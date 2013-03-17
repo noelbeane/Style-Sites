@@ -3,3 +3,20 @@
 //
 // All of your variables should go in this file.
 ////////////////////////
+
+// Standard Link Color
+$link-blue: nth($blue-drk, 2);
+
+// Promoted Items
+$promoted-padding: .875em !default;
+$marquee-padding: 1.25em !default;
+$promoted-content-font-size-increase: 581px !default;
+
+// Flexslider Defaults
+$flexbox-triangle-size: 10px !default;
+$flexbox-box-size: $flexbox-triangle-size + 25px !default;
+$flexbox-circle-size: 10px !default;
+
+// Menu
+$collapsed-nav-height: 11em !default;
+$expanded-nav-breakpoint: 857px !default;

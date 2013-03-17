@@ -1,0 +1,11 @@
+.view-mode-promoted_content {
+  figcaption {
+    @extend %europa;
+    padding: $promoted-padding;
+    background: nth($black, 1);
+    color: $link-blue;
+    margin-top: -.27em;
+
+    font-size: 1em;
+  }
+}

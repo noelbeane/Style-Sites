@@ -9,9 +9,16 @@
   = render :template => "../drupal/patterns/_pager.haml"
   = render :template => "patterns/_buttons.haml"
 
-%section#dbtv-patterns.element-group
-  %h1.section-title DBtv Patterns
+%section#general-dbtv-patterns.element-group
+  %h1.section-title General DBtv Patterns
   = render :template => "patterns/_tabs.haml"
   = render :template => "patterns/_contextual-links.haml"
+
+%section#dbtv-homepage-patterns.element-group
+  %h1.section-title DBtv Homepage Patterns
   = render :template => "patterns/_promoted-slider.haml"
   = render :template => "patterns/_promoted-item.haml"
+
+%section#dbtv-blog-patterns.element-group
+  %h1.section-title DBtv Blog Patterns
+  = render :template => "patterns/_blogroll.haml"
